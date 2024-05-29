@@ -1,0 +1,5 @@
+fastapi==0.111.0
+protobuf==5.26.1
+pymysql==1.1.0
+SQLAlchemy==2.0.30
+cloud-sql-python-connector==1.9.2

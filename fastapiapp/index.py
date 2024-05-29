@@ -19,7 +19,7 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
     # Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
     # keep secrets safe.
 
-    instance_connection_name = "datalabs-hs:asia-southeast2:db-proxysql"  # e.g. 'project:region:instance'
+    instance_connection_name = "datalabs-hs-training:asia-southeast2:db-proxysql"  # e.g. 'project:region:instance'
     db_user = "root"  # e.g. 'my-db-user'
     db_pass = "P/X8d;YMqB}=]@e<"  # e.g. 'my-db-password'
     db_name = "storedb"  # e.g. 'my-database'
@@ -39,7 +39,7 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
         return conn
 
     pool = sqlalchemy.create_engine(
-        "mysql+pymysql://root:P/X8d;YMqB}=]@e<@34.128.121.90/storedb",
+        "mysql+pymysql://root:P/X8d;YMqB}=]@e<@34.101.126.105/storedb",
         creator=getconn,
         # ...
     )
